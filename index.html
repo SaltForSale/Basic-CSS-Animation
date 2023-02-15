@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Css Animation Testing</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        animation-name: colorfade;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: relative;
+      }
+      @keyframes colorfade {
+        0% {
+          background-color: blue;
+          left: 0px;
+          top: 0px;
+        }
+        50% {
+          background-color: green;
+          left: 300px;
+          top: 0px;
+          width: 300px;
+          height: 300px;
+          border-radius: 100px;
+        }
+        100% {
+          background-color: yellow;
+          left: 0px;
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Css animation</h1>
+    <div></div>
+  </body>
+</html>
